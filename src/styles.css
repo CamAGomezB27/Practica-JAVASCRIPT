@@ -1,0 +1,95 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #191a20;
+    color: #ffffff;
+  }
+  
+  /* Contenedor Principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  /* Navegación */
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 14px 24px;
+}
+  
+  nav .logo img {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 28px;
+    object-fit: cover;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #539ad3;
+  }
+  
+  /* main */
+  main {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    gap: 80px;
+  }
+  /* Hero */
+  .info {
+    max-width: 600px;
+    margin: 50px 0;
+  }
+  
+  .info h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .info .highlight {
+    color: #4F46E5;
+  }
+  
+  .info p {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  
+  /* Imagen de Hero */
+  .info-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 60px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0e0f16;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+  
