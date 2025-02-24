@@ -1,0 +1,141 @@
+:root {
+  font-family: Arial, sans-serif;
+  --white: #ffffff;
+  --background: #191a20;
+  --sombra:#0e0f16;
+  --transition: gray;
+  --letrastransition: #539ad3;
+}
+
+
+/* General */
+  html, body {
+    background: var(--background);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo horizontalmente */
+    justify-content: center; /* Centra todo verticalmente */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño de los elementos */
+    overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+  }
+
+  /* Navegación */
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 18px 15px;
+    width: 100vw; /* Usa el ancho total de la ventana */
+    background: var(--sombra);
+    border-radius: 10px;
+    transition: box-shadow 1s ease; /* Transición suave */
+}
+  
+  nav:hover {
+    box-shadow: 0px 8px 20px var(--transition) /* Agrega la sombra al pasar el mouse */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+  }
+  
+  nav ul li a:hover {
+    color: var(--letrastransition);
+    transform: scale(1.2); /* Aumenta el tamaño de la letra al 120% */
+  }
+
+  .title {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin: -5px;
+    font-size: 1.2em;
+  }
+
+    /* Contenedor Principal */
+    .container {
+      max-width: 922px;
+      padding: 0px;
+      flex: 1;
+      display: flex;
+      justify-content: center; /* Centra contenido dentro del contenedor horizontalmente */
+      align-items: center; /* Centra contenido dentro del contenedor verticalmente */
+    }
+  
+  /* main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+    padding: 8px;
+    gap: 80px;
+    overflow-x: hidden;
+}
+
+  .info {
+    max-width: 600px;
+    margin: 0 0;
+  }
+  
+  .info h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--white);
+  }
+
+  .info p {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  
+  /* Imagen de Hero */
+  .info-image img {
+    width: 90%;
+    max-width: 210px;
+    border-radius: 100px;
+    box-shadow: 2px 5px 2.5px var(--transition);
+    transition: box-shadow 1s ease;
+  }
+
+  img:hover {
+    box-shadow: 4px 10px 7px 4px var(--white) /* Agrega la sombra al pasar el mouse */
+  }
+  
+  /* Footer */
+  footer {
+    font-weight: bold;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 18px 15px;
+    width: 100vw; /* Usa el ancho total de la ventana */
+    background: var(--sombra);
+    border-radius: 10px;
+    transition: box-shadow 1s ease; /* Transición suave */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+footer:hover {
+  box-shadow: 8px 0px 20px var(--transition); /* Agrega la sombra al pasar el mouse */
+  color: var(--letrastransition);
+}
+  
