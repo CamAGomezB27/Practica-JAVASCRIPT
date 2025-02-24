@@ -1,24 +1,36 @@
 /* General */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #191a20;
     color: #ffffff;
-  }
+}
   
   /* Contenedor Principal */
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 950px;
+    margin: 10px auto;
     padding: 0px;
+    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
   }
   
   /* Navegación */
   nav {
     display: flex;
     justify-content: center;
-    padding: 14px 24px;
+    padding: 18px 15px;
+    width: 100%; /* Ahora ocupa todo el ancho */
+    background: #0e0f16;
+    border-radius: 10px; /* Elimina el redondeo en los bordes */
 }
   
   nav .logo img {
@@ -32,6 +44,8 @@ body {
     list-style: none;
     display: flex;
     gap: 32px;
+    padding: 0;
+    margin: 0;
   }
   
   nav ul li {
@@ -50,12 +64,32 @@ body {
   
   /* main */
   main {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-    gap: 80px;
-  }
-  /* Hero */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px;
+  padding: 8px;
+  gap: 80px;
+  overflow-x: hidden;
+}
+
+.banner {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #4F46E5, #539ad3);
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.banner h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 1.2em;
+}
+
   .info {
     max-width: 600px;
     margin: 50px 0;
@@ -85,11 +119,10 @@ body {
   /* Footer */
   footer {
     background: #0e0f16;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  }
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+}
   
