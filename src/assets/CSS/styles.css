@@ -17,13 +17,14 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra todo horizontalmente */
-    justify-content: center; /* Centra todo verticalmente */
     box-sizing: border-box; /* Asegura que el padding no aumente el tamaño de los elementos */
     overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+    min-height: 100vh;
   }
 
   /* Navegación */
   nav {
+    position: fixed;
     display: flex;
     justify-content: center;
     padding: 18px 15px;
@@ -65,10 +66,11 @@
     width: 100%;
     padding: 20px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     font-size: 2em;
     margin: -5px;
     font-size: 1.2em;
+    margin-top: 70px; /* Ajusta esto según la altura del nav */
   }
 
     /* Contenedor Principal */
@@ -104,10 +106,10 @@
 
   .info p {
     font-size: 1.2em;
-    color: #ffffff;
+    color: var(--white);
   }
   
-  /* Imagen de Hero */
+  /* Imagen*/
   .info-image img {
     width: 90%;
     max-width: 210px;
@@ -118,6 +120,17 @@
 
   img:hover {
     box-shadow: 4px 10px 7px 4px var(--white) /* Agrega la sombra al pasar el mouse */
+  }
+
+  /* VIDEOS */
+  .sub-title {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 2em;
+    margin: -5px;
+    font-size: 1.2em;
   }
   
   /* Footer */
@@ -131,11 +144,28 @@
     background: var(--sombra);
     border-radius: 10px;
     transition: box-shadow 1s ease; /* Transición suave */
-    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 footer:hover {
   box-shadow: 8px 0px 20px var(--transition); /* Agrega la sombra al pasar el mouse */
   color: var(--letrastransition);
 }
-  
+
+.youtube-section {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.youtube-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--transition);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
