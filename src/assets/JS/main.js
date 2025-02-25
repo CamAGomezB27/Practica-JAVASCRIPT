@@ -32,5 +32,6 @@ async function fetchData(urlApi) {
         `).join('');
     } else {
         console.error('No se encontraron videos');
+        content.innerHTML = 'No se lograron cargar los videos';
     }
 })();
